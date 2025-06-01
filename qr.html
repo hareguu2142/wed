@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>각오와 의지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0; /* 흰색과 회색 사이의 색상 */
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7; /* 문단 줄 간격 */
+        }
+
+        .container {
+            max-width: 800px; /* 내용 최대 너비 */
+            margin: 40px auto; /* 페이지 중앙 정렬 및 위아래 여백 */
+            background-color: #ffffff; /* 내용 영역 배경은 흰색으로 */
+            padding: 30px 40px; /* 내부 여백 */
+            border-radius: 10px; /* 모서리 둥글게 */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* 부드러운 그림자 효과 */
+        }
+
+        h1 {
+            font-family: 'Gowun Dodum', serif; /* 제목용 폰트 */
+            text-align: center;
+            font-size: 2.8em; /* 제목 크기 */
+            color: #6a5acd; /* SlateBlue - 예쁜 보라색 계열 */
+            margin-bottom: 30px; /* 제목 아래 여백 */
+            padding-bottom: 20px; /* 제목 텍스트와 구분선 사이 여백 */
+            border-bottom: 3px dashed #b19cd9; /* 연보라색 점선 구분선 */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* 은은한 그림자 */
+            position: relative;
+        }
+
+        /* 제목 양 옆 장식 (선택 사항) */
+        h1::before, h1::after {
+            content: "✦"; /* 별 모양 유니코드 문자 */
+            font-size: 0.6em;
+            color: #9370db; /* MediumPurple */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40%);
+        }
+
+        h1::before {
+            left: -35px; /* 왼쪽 장식 위치 */
+        }
+
+        h1::after {
+            right: -35px; /* 오른쪽 장식 위치 */
+        }
+
+        /* 모바일에서는 장식 숨기기 (너무 복잡해 보일 수 있음) */
+        @media (max-width: 600px) {
+            h1::before, h1::after {
+                display: none;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+        }
+
+        p {
+            margin-bottom: 1.2em; /* 단락 간 여백 */
+            font-size: 1.05em; /* 본문 폰트 크기 */
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* .dialogue 클래스에 대한 별도의 특별한 스타일을 지정하지 않아
+           일반 p 태그와 동일하게 표시됩니다. */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>각오와 의지</h1>
+
+        <p class="dialogue">천사가 말합니다. “아무일도 일어나지 않았네요”</p>
+        <p>천사는 지도를 모두 조합하면, 출구가 보일 것이라고 생각했다.</p>
+        <p class="dialogue">남자가 말합니다. “각오가 없어서 그런것이 아닐까요?”</p>
+        <p class="dialogue">천사가 말합니다. “각오 말인가요?”</p>
+        <p class="dialogue">남자는 미로를 내려다보며 말합니다. “지금이라도 원한다면 미로를 나갈 수 있을 것 같다는 생각이 듭니다. 하지만..”</p>
+        <p>어느새 둘은 미로의 끝에 도달합니다. 그곳에는 높은 벽 뿐이었습니다.</p>
+        <p class="dialogue">“나가는 것이 꼭 좋은 것일까요?”</p>
+        <p>둘은 바닥에 내려왔습니다. 천사는 천장을 올려다 보며 말합니다.</p>
+        <p class="dialogue">“여기도 그렇게 나쁜곳은 아니에요, 그렇다고 해서 미로안에서만 살 수는 없어요”</p>
+        <p class="dialogue">남자가 말합니다. “미로안에서만 살 수 없다는 이유도 납득이 되지만, 미로는 그런 이유만으로는 내보내지 않을 생각인 것 같습니다. 어쩌면 미로는 처음부터 우리를 내보낼 생각이었을지도 모릅니다. 중요한 것은 우리의 의지인거죠. 더 넓은 세상을 보고 싶다는 그런 간절함이 필요합니다.”</p>
+        <p class="dialogue">천사가 말합니다. “당신에겐 그런 각오.. 의지가 있나요?”</p>
+        <p class="dialogue">남자가 말합니다. “여태까지는 잘 몰랐었지만, 당신을 보니 용기가 나는 것 같습니다.”</p>
+        <p>남자는 천사에게 각오를 다진 주문을 외웁니다.</p>
+    </div>
+</body>
+</html>
